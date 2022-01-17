@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage("Build"){
+            
+                options{
+                retry(5)
+                }
+                steps{
+            echo "Hi"
+            error "oh no"
+            echo "Hello"
+            }
+            }
+        }
+    }
