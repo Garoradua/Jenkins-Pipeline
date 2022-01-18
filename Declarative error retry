@@ -6,7 +6,7 @@ pipeline{
             retry(3){
                 echo "Hello "
                 error "Missing"
-            }
+                }
             }
         }
     }
