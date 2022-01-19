@@ -4,7 +4,7 @@ pipeline{
         stage("Build"){
             steps{
             retry(3){
-                echo "Hello "
+                echo " Hello "
                 error "Missing"
                 }
             }
